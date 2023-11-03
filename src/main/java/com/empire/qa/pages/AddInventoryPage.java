@@ -115,7 +115,7 @@ public class AddInventoryPage extends BaseTest {
 		UtilTest.dropdownmethod(inventoryStatusId, "In Transit");
 		UtilTest.dropdownmethod(inventoryConditonId, "Good");
 		UtilTest.dropdownmethod(inventoryLocationId, "chennai");
-		recievedDate.sendKeys("13-10-2023");
+		recievedDate.sendKeys("13/10/2023");
 		this.actualPrice.sendKeys(actualPrice);
 		UtilTest.dropdownmethod(mrpfactor, "3.00");
 		this.HSNCode.sendKeys(HSNcode);
