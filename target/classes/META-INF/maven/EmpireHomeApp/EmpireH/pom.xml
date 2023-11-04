@@ -21,7 +21,7 @@
 					<version>3.2.1</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>empiretestng.xml</suiteXmlFile>
+							<suiteXmlFile>Ehometestng.xml</suiteXmlFile>
 							<!-- suitexmlfile is used to select the xml file to
 							be run
 							also we can run multiple testng.xml files-->

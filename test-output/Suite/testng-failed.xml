@@ -8,19 +8,20 @@
     <classes>
       <class name="com.empire.qa.testcases.LocationTypesPageTest">
         <methods>
-          <include name="VerifyDeleteButtonBySearchLocationNameTest"/>
-          <include name="teardown"/>
-          <include name="VerifyToTopArrowBtnTest"/>
-          <include name="setup"/>
+          <include name="VerifySearchTextFieldTest"/>
           <include name="VerifylocationtypespageTitleTest"/>
           <include name="VerifyaddNewLocationwithoutDataTest"/>
-          <include name="VerifySearchTextFieldWithInvalidDataTest"/>
           <include name="VerifySnoSortingTest"/>
-          <include name="VerifyaddNewLocationwithValidDataTest"/>
+          <include name="VerifySearchTextFieldWithInvalidDataTest"/>
           <include name="VerifyEditButtonBySearchLocationNameTest"/>
+          <include name="VerifyaddNewLocationwithValidDataTest"/>
           <include name="VerifyDeleteButtonByClickingYesTest"/>
-          <include name="VerifyShowEntriesDropdownTest"/>
           <include name="VerifyaddNewLocationwithInvalidLocationNameTest"/>
+          <include name="VerifyShowEntriesDropdownTest"/>
+          <include name="VerifyDeleteButtonBySearchLocationNameTest"/>
+          <include name="VerifyToTopArrowBtnTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.empire.qa.testcases.LocationTypesPageTest -->
       <class name="com.empire.qa.testcases.SubCategoriesPageTest">
@@ -28,8 +29,8 @@
           <include name="VerifyDeleteButtonByClickingYesTest"/>
           <include name="VerifyEditButtonBySearchSubCategoryNameTest"/>
           <include name="VerifySearchTextFieldWithInvalidDataTest"/>
-          <include name="teardown"/>
           <include name="VerifySearchTextFieldTest"/>
+          <include name="teardown"/>
           <include name="VerifyDeleteButtonBySearchSubCategoryNameTest"/>
           <include name="setup"/>
         </methods>
@@ -37,19 +38,35 @@
       <class name="com.empire.qa.testcases.HolidaysPageTest">
         <methods>
           <include name="teardown"/>
-          <include name="VerifyaddNewolidayswithInvalidDataTest" invocation-numbers="0 1"/>
-          <include name="VerifyaddNewolidayswithValidDataTest" invocation-numbers="0 1"/>
+          <include name="VerifyaddNewolidayswithInvalidDataTest"/>
+          <include name="VerifyaddNewolidayswithValidDataTest"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.empire.qa.testcases.HolidaysPageTest -->
+      <class name="com.empire.qa.testcases.UserTypesPageTest">
+        <methods>
+          <include name="VerifyDeleteButtonByClickingYesTest"/>
+          <include name="VerifyaddNewUserTypePagewithoutData"/>
+          <include name="VerifySnoSortingTest"/>
+          <include name="VerifyShowEntriesDropdownTest"/>
+          <include name="VerifyEditButtonBySearch_TypeNameTest"/>
+          <include name="VerifyUserTypePageTitleTest"/>
+          <include name="VerifyaddNewUserTypePagewithInvalidTypeCodeTest"/>
+          <include name="VerifyTypeNameSortingTest"/>
+          <include name="VerifyTypeCodeSortingTest"/>
+          <include name="VerifyaddNewUserTypePagewithInvalidTypeNameTest"/>
+          <include name="VerifyDeleteButtonBySearch_TypeNameTest"/>
+          <include name="VerifyaddNewUserTypePagewithValidDataTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="VerifyToTopArrowBtnTest"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.UserTypesPageTest -->
       <class name="com.empire.qa.testcases.ShiftsPageTest">
         <methods>
           <include name="VerifyaddNewShiftwithValidDataTest"/>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="VerifyEditButtonBySearchShiftNameTest"/>
-          <include name="VerifyDeleteButtonBySearchShiftNameTest"/>
-          <include name="VerifyDeleteButtonByClickingYesTest"/>
         </methods>
       </class> <!-- com.empire.qa.testcases.ShiftsPageTest -->
     </classes>

@@ -142,4 +142,11 @@ public class HomePage extends BaseTest {
 		shifts.click();
 		return new ShiftsPage();
 	}
+	public MrpFactorsPage verifyMrpFactorPage() throws Throwable {
+		
+		masters.click();
+		Thread.sleep(3000);
+		mrpFactor.click();
+		return new MrpFactorsPage();
+	}
 }

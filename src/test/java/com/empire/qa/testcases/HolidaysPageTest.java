@@ -78,8 +78,8 @@ public class HolidaysPageTest extends BaseTest {
 		holidayspage.VerifyDeleteButtonBySelectingHolidaysNameAndClickingYes();
 	}
 
-//	@AfterMethod
-//	public void teardown() {
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void teardown() {
+		driver.quit();
+	}
 }

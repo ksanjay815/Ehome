@@ -1,14 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.empire.qa.extentreport.ExtentReportTest"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.empire.qa.testcases.LocationTypesPageTest">
+        <methods>
+          <include name="VerifySearchTextFieldTest"/>
+          <include name="VerifylocationtypespageTitleTest"/>
+          <include name="VerifyaddNewLocationwithoutDataTest"/>
+          <include name="VerifySnoSortingTest"/>
+          <include name="VerifySearchTextFieldWithInvalidDataTest"/>
+          <include name="VerifyEditButtonBySearchLocationNameTest"/>
+          <include name="VerifyaddNewLocationwithValidDataTest"/>
+          <include name="VerifyDeleteButtonByClickingYesTest"/>
+          <include name="VerifyaddNewLocationwithInvalidLocationNameTest"/>
+          <include name="VerifyShowEntriesDropdownTest"/>
+          <include name="VerifyDeleteButtonBySearchLocationNameTest"/>
+          <include name="VerifyToTopArrowBtnTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.LocationTypesPageTest -->
+      <class name="com.empire.qa.testcases.SubCategoriesPageTest">
+        <methods>
+          <include name="VerifyDeleteButtonByClickingYesTest"/>
+          <include name="VerifyEditButtonBySearchSubCategoryNameTest"/>
+          <include name="VerifySearchTextFieldWithInvalidDataTest"/>
+          <include name="VerifySearchTextFieldTest"/>
+          <include name="teardown"/>
+          <include name="VerifyDeleteButtonBySearchSubCategoryNameTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.SubCategoriesPageTest -->
       <class name="com.empire.qa.testcases.HolidaysPageTest">
         <methods>
+          <include name="teardown"/>
+          <include name="VerifyaddNewolidayswithInvalidDataTest"/>
           <include name="VerifyaddNewolidayswithValidDataTest"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.empire.qa.testcases.HolidaysPageTest -->
+      <class name="com.empire.qa.testcases.UserTypesPageTest">
+        <methods>
+          <include name="VerifyDeleteButtonByClickingYesTest"/>
+          <include name="VerifyaddNewUserTypePagewithoutData"/>
+          <include name="VerifySnoSortingTest"/>
+          <include name="VerifyShowEntriesDropdownTest"/>
+          <include name="VerifyEditButtonBySearch_TypeNameTest"/>
+          <include name="VerifyUserTypePageTitleTest"/>
+          <include name="VerifyaddNewUserTypePagewithInvalidTypeCodeTest"/>
+          <include name="VerifyTypeNameSortingTest"/>
+          <include name="VerifyTypeCodeSortingTest"/>
+          <include name="VerifyaddNewUserTypePagewithInvalidTypeNameTest"/>
+          <include name="VerifyDeleteButtonBySearch_TypeNameTest"/>
+          <include name="VerifyaddNewUserTypePagewithValidDataTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="VerifyToTopArrowBtnTest"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.UserTypesPageTest -->
+      <class name="com.empire.qa.testcases.ShiftsPageTest">
+        <methods>
+          <include name="VerifyaddNewShiftwithValidDataTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.ShiftsPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
