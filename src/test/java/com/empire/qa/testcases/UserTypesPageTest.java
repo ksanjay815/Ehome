@@ -31,7 +31,7 @@ public class UserTypesPageTest extends BaseTest {
 
 		homepage = loginpage.VerifyLoginPage();
 		usertypepage = homepage.verifyUserTypePage();
-		Thread.sleep(1200);
+		Thread.sleep(2000);
 	}
 
 	@Test
@@ -44,6 +44,11 @@ public class UserTypesPageTest extends BaseTest {
 	@Test
 	public void VerifyBackBtnTest() throws InterruptedException {
 		usertypepage.VerifyBackBtn();
+	}
+
+	@Test
+	public void VerifybackBtnAddUserTypePgTest() throws InterruptedException {
+		usertypepage.VerifybackBtnAddUserTypePg();
 	}
 
 	@Test(priority = 1)

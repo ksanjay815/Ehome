@@ -45,6 +45,11 @@ public class CategoryTypesPageTest extends BaseTest {
 		categorytypepage.VerifyBackBtn();
 	}
 
+	@Test
+	public void VerifybackBtnAddCategoryTypePg() throws InterruptedException {
+		categorytypepage.VerifybackBtnAddCategoryTypePg();
+	}
+
 	@Test(priority = 1)
 	public void VerifyaddNewCategoryPagewithValidDataTest() throws InterruptedException {
 		categorytypepage.VerifyaddNewCategoryPagewithValidData();

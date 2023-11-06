@@ -33,7 +33,7 @@ public class HolidaysPageTest extends BaseTest {
 
 		homepage = loginpage.VerifyLoginPage();
 		holidayspage = homepage.verifyHolidaysPage();
-		Thread.sleep(1200);
+		Thread.sleep(2000);
 	}
 
 	@Test
@@ -46,6 +46,11 @@ public class HolidaysPageTest extends BaseTest {
 	@Test
 	public void VerifyBackBtnTest() throws InterruptedException {
 		holidayspage.VerifyBackBtn();
+	}
+
+	@Test
+	public void VerifybackBtnAddHolidayTypeTypePg() throws InterruptedException {
+		holidayspage.VerifybackBtnAddHolidayTypeTypePg();
 	}
 
 	@Test(priority = 1)

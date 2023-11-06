@@ -22,6 +22,9 @@ public class HolidaysPage extends BaseTest {
 	@FindBy(xpath = "//i[@class='fa fa-plus']")
 	WebElement addNewBtn;
 
+	@FindBy(xpath = "//a[@class='btn btn-add']")
+	WebElement backBtnAddHolidayTypeTypePg;
+
 	@FindBy(xpath = "//input[@class='form-control']")
 	WebElement holidayDate;
 
@@ -59,6 +62,12 @@ public class HolidaysPage extends BaseTest {
 	public void VerifyBackBtn() throws InterruptedException {
 
 		backBtn.click();
+	}
+
+	public void VerifybackBtnAddHolidayTypeTypePg() throws InterruptedException {
+		addNewBtn.click();
+		Thread.sleep(1000);
+		backBtnAddHolidayTypeTypePg.click();
 	}
 
 	public void VerifyaddNewolidayswithValidData() throws Throwable {

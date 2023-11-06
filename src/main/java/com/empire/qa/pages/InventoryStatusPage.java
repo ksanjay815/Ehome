@@ -10,7 +10,7 @@ import com.empire.qa.base.BaseTest;
 import com.empire.qa.utils.UtilTest;
 
 public class InventoryStatusPage extends BaseTest {
-	
+
 	@FindBy(xpath = "//i[@class='fa fa-reply mr-2']")
 	WebElement backBtn;
 
@@ -22,6 +22,9 @@ public class InventoryStatusPage extends BaseTest {
 
 	@FindBy(xpath = "//button[text()=' Save']")
 	WebElement saveBtn;
+
+	@FindBy(xpath = "//a[@class='btn btn-add']")
+	WebElement backBtnAddStatusTypePg;
 
 	@FindBy(xpath = "//input[@class='form-control form-control-sm']")
 	WebElement searchTextField;
@@ -63,18 +66,25 @@ public class InventoryStatusPage extends BaseTest {
 		super();
 		PageFactory.initElements(driver, this);
 	}
+
 	public String VerifyInventoryPageTitle() {
 		return driver.getTitle();
 
 	}
 
 	public void VerifyBackBtn() throws InterruptedException {
-	
+
 		backBtn.click();
 	}
 
+	public void VerifybackBtnAddStatusPg() throws InterruptedException {
+		addStatusTypeBtn.click();
+		Thread.sleep(1000);
+		backBtnAddStatusTypePg.click();
+	}
+
 	public void VerifyaddStatusTypewithValidData() throws InterruptedException {
-		
+
 		addStatusTypeBtn.click();
 		Thread.sleep(1000);
 		statusName.sendKeys("In Transit");
@@ -82,14 +92,14 @@ public class InventoryStatusPage extends BaseTest {
 	}
 
 	public void VerifyaddStatusTypewithoutData() throws InterruptedException {
-		
+
 		addStatusTypeBtn.click();
 		Thread.sleep(1000);
 		saveBtn.click();
 	}
 
 	public void VerifyaddNewStatusTypewithInvalidLocationName() throws InterruptedException {
-		
+
 		addStatusTypeBtn.click();
 		Thread.sleep(1000);
 		statusName.sendKeys("245");
@@ -97,37 +107,37 @@ public class InventoryStatusPage extends BaseTest {
 	}
 
 	public void VerifyToTopArrowBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		upArrowBtn.click();
 	}
 
 	public void VerifyNextPageBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		nextPage.click();
 	}
 
 	public void VerifyPage3Btn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		page3.click();
 	}
 
 	public void VerifyPreviousPageBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		nextPage.click();
 		previousPage.click();
 	}
 
 	public void VerifySnoSorting() throws InterruptedException {
-		
+
 		sortSno.click();
 	}
 
 	public void VerifyStatusNameSorting() throws InterruptedException {
-	
+
 		sortStatusName.click();
 	}
 
@@ -194,4 +204,3 @@ public class InventoryStatusPage extends BaseTest {
 		}
 	}
 }
-

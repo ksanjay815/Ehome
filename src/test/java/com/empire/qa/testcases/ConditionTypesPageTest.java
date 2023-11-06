@@ -45,6 +45,11 @@ public class ConditionTypesPageTest extends BaseTest {
 		conditiontypespage.VerifyBackBtn();
 	}
 
+	@Test
+	public void VerifybackBtnAddConditionTypePgTest() throws InterruptedException {
+		conditiontypespage.VerifybackBtnAddConditionTypePg();
+	}
+
 	@Test(priority = 1)
 	public void VerifyaddNewConditionwithValidDataTest() throws Throwable {
 		conditiontypespage.VerifyaddNewConditionwithValidData();

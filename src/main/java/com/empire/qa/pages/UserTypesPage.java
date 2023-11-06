@@ -25,6 +25,9 @@ public class UserTypesPage extends BaseTest {
 	@FindBy(xpath = "//button[text()=' Save']")
 	WebElement saveBtn;
 
+	@FindBy(xpath = "//a[@class='btn btn-add']")
+	WebElement backBtnAddUserTypePg;
+
 	@FindBy(xpath = "//input[@class='form-control form-control-sm']")
 	WebElement searchTextField;
 
@@ -82,8 +85,14 @@ public class UserTypesPage extends BaseTest {
 		backBtn.click();
 	}
 
+	public void VerifybackBtnAddUserTypePg() throws InterruptedException {
+		addNewBtn.click();
+		Thread.sleep(1000);
+		backBtnAddUserTypePg.click();
+	}
+
 	public void VerifyaddNewUserTypePagewithValidData() throws InterruptedException {
-		
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		typeName.sendKeys("Sanjay");
@@ -93,14 +102,14 @@ public class UserTypesPage extends BaseTest {
 	}
 
 	public void VerifyaddNewUserTypePagewithoutData() throws InterruptedException {
-	
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		saveBtn.click();
 	}
 
 	public void VerifyaddNewUserTypePagewithInvalidTypeName() throws InterruptedException {
-		
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		typeName.sendKeys("@!@#Jay");
@@ -110,7 +119,7 @@ public class UserTypesPage extends BaseTest {
 	}
 
 	public void VerifyaddNewUserTypePagewithInvalidTypeCode() throws InterruptedException {
-	
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		typeName.sendKeys("Sanjay");
@@ -120,48 +129,48 @@ public class UserTypesPage extends BaseTest {
 	}
 
 	public void VerifyToTopArrowBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		upArrowBtn.click();
 	}
 
 	public void VerifyNextPageBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		nextPage.click();
 	}
 
 	public void VerifyPreviousPageBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		nextPage.click();
 		previousPage.click();
 	}
 
 	public void VerifyPage2Btn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		page2.click();
 	}
 
 	public void VerifyPage3Btn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		page3.click();
 	}
 
 	public void VerifySnoSorting() throws InterruptedException {
-		
+
 		sortSno.click();
 	}
 
 	public void VerifyTypeNameSorting() throws InterruptedException {
-		
+
 		sortTypeName.click();
 	}
 
 	public void VerifyTypeCodeSorting() throws InterruptedException {
-		
+
 		sortTypeCode.click();
 	}
 

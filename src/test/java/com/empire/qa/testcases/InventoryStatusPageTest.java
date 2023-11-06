@@ -45,6 +45,11 @@ public class InventoryStatusPageTest extends BaseTest {
 		inventorystatuspage.VerifyBackBtn();
 	}
 
+	@Test
+	public void VerifybackBtnAddStatusPg() throws InterruptedException {
+		inventorystatuspage.VerifybackBtnAddStatusPg();
+	}
+
 	@Test(priority = 1)
 	public void VerifyaddStatusTypewithValidDataTest() throws Throwable {
 		inventorystatuspage.VerifyaddStatusTypewithValidData();

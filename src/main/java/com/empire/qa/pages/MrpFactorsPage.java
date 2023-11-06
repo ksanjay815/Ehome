@@ -26,6 +26,9 @@ public class MrpFactorsPage extends BaseTest {
 	@FindBy(xpath = "//button[text()=' Save']")
 	WebElement saveBtn;
 
+	@FindBy(xpath = "//a[@class='btn btn-add']")
+	WebElement backBtnAddMrpFactorsPg;
+
 	@FindBy(xpath = "//input[@class='form-control form-control-sm']")
 	WebElement searchTextField;
 
@@ -78,6 +81,12 @@ public class MrpFactorsPage extends BaseTest {
 	public void VerifyBackBtn() throws InterruptedException {
 		Thread.sleep(1000);
 		backBtn.click();
+	}
+
+	public void VerifybackBtnAddMrpFactorsPg() throws InterruptedException {
+		addNewBtn.click();
+		Thread.sleep(1000);
+		backBtnAddMrpFactorsPg.click();
 	}
 
 	public void VerifyaddNewMrpFactorwithValidData() throws InterruptedException {

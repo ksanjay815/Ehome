@@ -23,6 +23,9 @@ public class CategoryTypesPage extends BaseTest {
 	@FindBy(xpath = "//button[text()=' Save']")
 	WebElement saveBtn;
 
+	@FindBy(xpath = "//a[@class='btn btn-add']")
+	WebElement backBtnAddCategoryTypePg;
+
 	@FindBy(xpath = "//input[@class='form-control form-control-sm']")
 	WebElement searchTextField;
 
@@ -74,6 +77,12 @@ public class CategoryTypesPage extends BaseTest {
 
 	public void VerifyBackBtn() throws InterruptedException {
 		backBtn.click();
+	}
+
+	public void VerifybackBtnAddCategoryTypePg() throws InterruptedException {
+		addNewCategoryBtn.click();
+		Thread.sleep(1000);
+		backBtnAddCategoryTypePg.click();
 	}
 
 	public void VerifyaddNewCategoryPagewithValidData() throws InterruptedException {

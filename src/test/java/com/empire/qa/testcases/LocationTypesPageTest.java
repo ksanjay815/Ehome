@@ -30,7 +30,7 @@ public class LocationTypesPageTest extends BaseTest {
 
 		homepage = loginpage.VerifyLoginPage();
 		locationtypespage = homepage.verifyLocationTypesPage();
-		Thread.sleep(1200);
+		Thread.sleep(2000);
 	}
 
 	@Test
@@ -43,6 +43,11 @@ public class LocationTypesPageTest extends BaseTest {
 	@Test
 	public void VerifyBackBtnTest() throws InterruptedException {
 		locationtypespage.VerifyBackBtn();
+	}
+
+	@Test
+	public void VerifybackBtnAddLocationTypePgTest() throws InterruptedException {
+		locationtypespage.VerifybackBtnAddLocationTypePg();
 	}
 
 	@Test(priority = 1)

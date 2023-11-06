@@ -46,6 +46,11 @@ public class MrpFactorsPageTest extends BaseTest {
 		mrpfactorspage.VerifyBackBtn();
 	}
 
+	@Test
+	public void VerifybackBtnAddMrpFactorsPgTest() throws InterruptedException {
+		mrpfactorspage.VerifybackBtnAddMrpFactorsPg();
+	}
+
 	@Test(priority = 1)
 	public void VerifyaddNewMrpFactorwithValidDataTest() throws Throwable {
 		mrpfactorspage.VerifyaddNewMrpFactorwithValidData();

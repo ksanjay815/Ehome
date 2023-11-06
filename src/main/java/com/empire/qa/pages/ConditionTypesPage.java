@@ -23,6 +23,9 @@ public class ConditionTypesPage extends BaseTest {
 	@FindBy(xpath = "//button[text()=' Save']")
 	WebElement saveBtn;
 
+	@FindBy(xpath = "//a[@class='btn btn-add']")
+	WebElement backBtnAddConditionTypePg;
+
 	@FindBy(xpath = "//input[@class='form-control form-control-sm']")
 	WebElement searchTextField;
 
@@ -70,12 +73,18 @@ public class ConditionTypesPage extends BaseTest {
 	}
 
 	public void VerifyBackBtn() throws InterruptedException {
-		
+
 		backBtn.click();
 	}
 
+	public void VerifybackBtnAddConditionTypePg() throws InterruptedException {
+		addNewBtn.click();
+		Thread.sleep(1000);
+		backBtnAddConditionTypePg.click();
+	}
+
 	public void VerifyaddNewConditionwithValidData() throws InterruptedException {
-		
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		conditionName.sendKeys("Good Condition");
@@ -83,14 +92,14 @@ public class ConditionTypesPage extends BaseTest {
 	}
 
 	public void VerifyaddNewConditionwithoutData() throws InterruptedException {
-	
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		saveBtn.click();
 	}
 
 	public void VerifyaddNewConditionwithInvalidLocationName() throws InterruptedException {
-	
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		conditionName.sendKeys("245");
@@ -98,27 +107,27 @@ public class ConditionTypesPage extends BaseTest {
 	}
 
 	public void VerifyToTopArrowBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		upArrowBtn.click();
 	}
 
 	public void VerifyNextPageBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		Thread.sleep(1000);
 		nextPage.click();
 	}
 
 	public void VerifyPage3Btn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		Thread.sleep(1000);
 		page3.click();
 	}
 
 	public void VerifyPreviousPageBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		Thread.sleep(1000);
 		nextPage.click();
@@ -126,12 +135,12 @@ public class ConditionTypesPage extends BaseTest {
 	}
 
 	public void VerifySnoSorting() throws InterruptedException {
-		
+
 		sortSno.click();
 	}
 
 	public void VerifyConditionNameSorting() throws InterruptedException {
-		
+
 		sortConditionName.click();
 	}
 

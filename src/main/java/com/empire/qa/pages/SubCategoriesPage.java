@@ -37,6 +37,9 @@ public class SubCategoriesPage extends BaseTest {
 	@FindBy(xpath = "//button[text()=' Save']")
 	WebElement saveBtn;
 
+	@FindBy(xpath = "//a[@class='btn btn-add']")
+	WebElement backBtnAddSubCategoryTypePg;
+
 	@FindBy(xpath = "//input[@class='form-control form-control-sm']")
 	WebElement searchTextField;
 
@@ -89,12 +92,18 @@ public class SubCategoriesPage extends BaseTest {
 	}
 
 	public void VerifyBackBtn() throws InterruptedException {
-		
+
 		backBtn.click();
 	}
 
+	public void VerifybackBtnAddSubCategoryTypePg() throws InterruptedException {
+		addNewSubCategoryBtn.click();
+		Thread.sleep(1000);
+		backBtnAddSubCategoryTypePg.click();
+	}
+
 	public void VerifyaddSubCategoryPagewithValidData() throws InterruptedException {
-	
+
 		addNewSubCategoryBtn.click();
 		Thread.sleep(1000);
 		UtilTest.dropdownmethod(categoryNameDropdown, "bed room");
@@ -104,14 +113,14 @@ public class SubCategoriesPage extends BaseTest {
 	}
 
 	public void VerifyaddSubCategoryPagewithoutData() throws InterruptedException {
-	
+
 		addNewSubCategoryBtn.click();
 		Thread.sleep(1000);
 		saveBtn.click();
 	}
 
 	public void VerifyaddSubCategoryPagewithInvalidSubCategoryName() throws InterruptedException {
-	
+
 		addNewSubCategoryBtn.click();
 		Thread.sleep(1000);
 		UtilTest.dropdownmethod(categoryNameDropdown, "bed room");
@@ -121,7 +130,7 @@ public class SubCategoriesPage extends BaseTest {
 	}
 
 	public void VerifyToTopArrowBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		upArrowBtn.click();
 	}
@@ -140,12 +149,12 @@ public class SubCategoriesPage extends BaseTest {
 //	}
 
 	public void VerifySnoSorting() throws InterruptedException {
-		
+
 		sortSno.click();
 	}
 
 	public void VerifySubCategoryNameSorting() throws InterruptedException {
-	
+
 		sortSubCategoryName.click();
 	}
 
@@ -154,7 +163,7 @@ public class SubCategoriesPage extends BaseTest {
 	}
 
 	public void VerifyEditButtonBySearchSubCategoryName() throws InterruptedException {
-		
+
 		selectCategoriesDropdown.click();
 		Thread.sleep(1000);
 		List<WebElement> dropdownlist = driver.findElements(By.xpath("//ul[@id='select2-subcatDD-results']//li"));
@@ -177,7 +186,7 @@ public class SubCategoriesPage extends BaseTest {
 	}
 
 	public void VerifyDeleteButtonBySearchSubCategoryName() throws InterruptedException {
-		
+
 		selectCategoriesDropdown.click();
 		Thread.sleep(1000);
 		List<WebElement> dropdownlist = driver.findElements(By.xpath("//ul[@id='select2-subcatDD-results']//li"));
@@ -203,7 +212,7 @@ public class SubCategoriesPage extends BaseTest {
 	}
 
 	public void VerifyDeleteButtonByClickingYes() throws InterruptedException {
-		
+
 		selectCategoriesDropdown.click();
 		Thread.sleep(1000);
 		List<WebElement> dropdownlist = driver.findElements(By.xpath("//ul[@id='select2-subcatDD-results']//li"));
@@ -225,7 +234,7 @@ public class SubCategoriesPage extends BaseTest {
 	}
 
 	public void VerifySearchTextField() throws InterruptedException {
-		
+
 		selectCategoriesDropdown.click();
 		Thread.sleep(1000);
 		List<WebElement> dropdownlist = driver.findElements(By.xpath("//ul[@id='select2-subcatDD-results']//li"));
@@ -259,7 +268,7 @@ public class SubCategoriesPage extends BaseTest {
 	}
 
 	public void VerifySearchTextFieldWithInvalidData() throws InterruptedException {
-		
+
 		selectCategoriesDropdown.click();
 		Thread.sleep(1000);
 		List<WebElement> dropdownlist = driver.findElements(By.xpath("//ul[@id='select2-subcatDD-results']//li"));

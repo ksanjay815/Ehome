@@ -29,7 +29,7 @@ public class SubCategoriesPageTest extends BaseTest {
 
 		homepage = loginpage.VerifyLoginPage();
 		subcategoriespage = homepage.verifySubCategoriesPage();
-		Thread.sleep(1200);
+		Thread.sleep(2000);
 	}
 
 	@Test
@@ -47,6 +47,11 @@ public class SubCategoriesPageTest extends BaseTest {
 	@Test
 	public void VerifyBackBtnTest() throws InterruptedException {
 		subcategoriespage.VerifyBackBtn();
+	}
+
+	@Test
+	public void VerifybackBtnAddSubCategoryTypePg() throws InterruptedException {
+		subcategoriespage.VerifybackBtnAddSubCategoryTypePg();
 	}
 
 	@Test(priority = 1)
@@ -119,6 +124,7 @@ public class SubCategoriesPageTest extends BaseTest {
 		subcategoriespage.VerifySearchTextFieldWithInvalidData();
 
 	}
+
 	@AfterMethod
 	public void teardown() {
 		driver.quit();

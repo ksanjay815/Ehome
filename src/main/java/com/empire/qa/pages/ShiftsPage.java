@@ -23,6 +23,9 @@ public class ShiftsPage extends BaseTest {
 	@FindBy(xpath = "//i[@class='fa fa-plus']")
 	WebElement addNewBtn;
 
+	@FindBy(xpath = "//a[@class='btn btn-add']")
+	WebElement backBtnAddShiftsPg;
+
 	@FindBy(xpath = "//input[@id='ShiftName']")
 	WebElement shiftName;
 
@@ -82,12 +85,18 @@ public class ShiftsPage extends BaseTest {
 	}
 
 	public void VerifyBackBtn() throws InterruptedException {
-		
+
 		backBtn.click();
 	}
 
+	public void VerifybackBtnAddShiftsPg() throws InterruptedException {
+		addNewBtn.click();
+		Thread.sleep(1000);
+		backBtnAddShiftsPg.click();
+	}
+
 	public void VerifyaddNewShiftwithValidData() throws InterruptedException {
-		
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		shiftName.sendKeys("Night");
@@ -105,7 +114,7 @@ public class ShiftsPage extends BaseTest {
 	}
 
 	public void VerifyaddNewShiftwithoutData() throws InterruptedException {
-		
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		saveBtn.click();
@@ -117,7 +126,7 @@ public class ShiftsPage extends BaseTest {
 	}
 
 	public void VerifyaddNewShiftwithInvalidShiftName() throws InterruptedException {
-		
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		shiftName.sendKeys("Night");
@@ -127,37 +136,37 @@ public class ShiftsPage extends BaseTest {
 	}
 
 	public void VerifyToTopArrowBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		upArrowBtn.click();
 	}
 
 	public void VerifyNextPageBtn() throws InterruptedException {
-	
+
 		UtilTest.ScrolldowntoEnd();
 		nextPage.click();
 	}
 
 	public void VerifyPage2Btn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		page2.click();
 	}
 
 	public void VerifyPreviousPageBtn() throws InterruptedException {
-	
+
 		UtilTest.ScrolldowntoEnd();
 		nextPage.click();
 		previousPage.click();
 	}
 
 	public void VerifySnoSorting() throws InterruptedException {
-		
+
 		sortSno.click();
 	}
 
 	public void VerifyShiftNameSorting() throws InterruptedException {
-		
+
 		sortShiftName.click();
 	}
 

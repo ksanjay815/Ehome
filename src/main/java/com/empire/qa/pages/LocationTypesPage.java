@@ -23,6 +23,9 @@ public class LocationTypesPage extends BaseTest {
 	@FindBy(xpath = "//button[text()=' Save']")
 	WebElement saveBtn;
 
+	@FindBy(xpath = "//a[@class='btn btn-add']")
+	WebElement backBtnAddSLocationypePg;
+
 	@FindBy(xpath = "//input[@class='form-control form-control-sm']")
 	WebElement searchTextField;
 
@@ -70,12 +73,18 @@ public class LocationTypesPage extends BaseTest {
 	}
 
 	public void VerifyBackBtn() throws InterruptedException {
-		
+
 		backBtn.click();
 	}
 
+	public void VerifybackBtnAddLocationTypePg() throws InterruptedException {
+		addNewBtn.click();
+		Thread.sleep(1000);
+		backBtnAddSLocationypePg.click();
+	}
+
 	public void VerifyaddNewLocationwithValidData() throws InterruptedException {
-		
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		locationName.sendKeys("goa");
@@ -83,14 +92,14 @@ public class LocationTypesPage extends BaseTest {
 	}
 
 	public void VerifyaddNewLocationwithoutData() throws InterruptedException {
-		
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		saveBtn.click();
 	}
 
 	public void VerifyaddNewLocationwithInvalidLocationName() throws InterruptedException {
-		
+
 		addNewBtn.click();
 		Thread.sleep(1000);
 		locationName.sendKeys("24$%");
@@ -98,35 +107,37 @@ public class LocationTypesPage extends BaseTest {
 	}
 
 	public void VerifyToTopArrowBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		upArrowBtn.click();
 	}
 
 	public void VerifyNextPageBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		nextPage.click();
 	}
+
 	public void VerifyPage3Btn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		page3.click();
 	}
+
 	public void VerifyPreviousPageBtn() throws InterruptedException {
-		
+
 		UtilTest.ScrolldowntoEnd();
 		nextPage.click();
 		previousPage.click();
 	}
 
 	public void VerifySnoSorting() throws InterruptedException {
-	
+
 		sortSno.click();
 	}
 
 	public void VerifyLocationNameSorting() throws InterruptedException {
-		
+
 		sortLocationName.click();
 	}
 

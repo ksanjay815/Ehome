@@ -30,7 +30,7 @@ public class ShiftsPageTest extends BaseTest {
 
 		homepage = loginpage.VerifyLoginPage();
 		shiftspage = homepage.verifyShiftsPage();
-		Thread.sleep(1200);
+		Thread.sleep(1600);
 	}
 
 	@Test
@@ -43,6 +43,11 @@ public class ShiftsPageTest extends BaseTest {
 	@Test
 	public void VerifyBackBtnTest() throws InterruptedException {
 		shiftspage.VerifyBackBtn();
+	}
+
+	@Test
+	public void VerifybackBtnAddShiftsPgTest() throws InterruptedException {
+		shiftspage.VerifybackBtnAddShiftsPg();
 	}
 
 	@Test(priority = 1)
