@@ -74,11 +74,7 @@ public class HolidaysPage extends BaseTest {
 
 		addNewBtn.click();
 		Thread.sleep(1000);
-		holidayDate.sendKeys("26");
-		Thread.sleep(1000);
-		holidayDate.sendKeys("01");
-		Thread.sleep(1000);
-		holidayDate.sendKeys("///2023");
+		holidayDate.sendKeys("26/01/2023");
 		holidayName.sendKeys("Republic Day");
 		holidayDescription.sendKeys("Republic day celebration");
 		// saveBtn.click();
