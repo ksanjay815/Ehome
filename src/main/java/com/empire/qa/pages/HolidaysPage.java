@@ -105,8 +105,6 @@ public class HolidaysPage extends BaseTest {
 		addNewBtn.click();
 		Thread.sleep(1000);
 		holidayDate.sendKeys("0100/0000");
-		holidayDate.sendKeys("00/260000");
-		holidayDate.sendKeys("00/00/2023");
 		holidayName.sendKeys("Republic Day");
 		holidayDescription.sendKeys("Republic day celebration");
 		// saveBtn.click();
@@ -124,7 +122,7 @@ public class HolidaysPage extends BaseTest {
 
 		editBtn.click();
 		Thread.sleep(1000);
-		holidayDate.sendKeys("2023-02-01");
+		holidayDate.sendKeys("10/04/2023");
 		holidayName.clear();
 		holidayName.sendKeys("Holi");
 		holidayDescription.clear();
