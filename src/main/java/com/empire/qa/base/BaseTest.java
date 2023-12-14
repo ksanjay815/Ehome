@@ -25,7 +25,7 @@ public class BaseTest {
 		try {
 			prop = new Properties();
 			FileInputStream file = new FileInputStream(
-					"D:\\Eclipse\\MT-01447\\EmpireHome\\src\\main\\java\\com\\empire\\qa\\config\\config.properties");
+					".\\src\\main\\java\\com\\empire\\qa\\config\\config.properties");
 			prop.load(file);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

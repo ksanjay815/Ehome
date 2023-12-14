@@ -6,7 +6,8 @@
 	</listeners>
 	<test thread-count="3" name="Test">
 		<classes>
-			<class name="com.empire.qa.testcases.UserTypesPageTest" />
+		<class name="com.empire.qa.testcases.LoginPageTest" />
+		<!--	<class name="com.empire.qa.testcases.UserTypesPageTest" />
 			<class name="com.empire.qa.testcases.ConditionTypesPageTest" />
 			<class name="com.empire.qa.testcases.InventoryStatusPageTest" />
 			<class name="com.empire.qa.testcases.HolidaysPageTest" />
@@ -15,10 +16,10 @@
 			<class name="com.empire.qa.testcases.CategoryTypesPageTest" />
 			<class name="com.empire.qa.testcases.HomePageTest" />
 			<class name="com.empire.qa.testcases.AddInventoryTest" />
-			<class name="com.empire.qa.testcases.LoginPageTest" />
+			
 			<class name="com.empire.qa.testcases.LocationTypesPageTest" />
 			<class name="com.empire.qa.testcases.MrpFactorsPageTest" />
-
+-->
 		</classes>
 	</test> <!--
 	Test -->

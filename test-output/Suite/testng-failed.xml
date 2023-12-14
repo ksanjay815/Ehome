@@ -6,66 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.empire.qa.testcases.MrpFactorsPageTest">
+      <class name="com.empire.qa.testcases.LoginPageTest">
         <methods>
-          <include name="VerifyaddNewMrpFactorwithInvalidFactorValueTest"/>
-          <include name="VerifySearchTextFieldTest"/>
-          <include name="VerifymrpfactorspageTitleTest"/>
-          <include name="VerifyDeleteButtonBySearchFactorNameTest"/>
-          <include name="VerifySnoSortingTest"/>
-          <include name="VerifyShowEntriesDropdownTest"/>
-          <include name="VerifySearchTextFieldWithInvalidDataTest"/>
-          <include name="VerifyDeleteButtonByClickingYesTest"/>
-          <include name="VerifyToTopArrowBtnTest"/>
-          <include name="VerifyaddNewMrpFactorwithValidDataTest"/>
-          <include name="VerifyEditButtonBySearchFactorNameTest"/>
-          <include name="teardown"/>
-          <include name="VerifybackBtnAddMrpFactorsPgTest"/>
           <include name="setup"/>
-          <include name="VerifyaddNewMrpFactorwithoutDataTest"/>
-        </methods>
-      </class> <!-- com.empire.qa.testcases.MrpFactorsPageTest -->
-      <class name="com.empire.qa.testcases.LocationTypesPageTest">
-        <methods>
-          <include name="VerifyDeleteButtonBySearchLocationNameTest"/>
-          <include name="VerifyToTopArrowBtnTest"/>
-          <include name="teardown"/>
-          <include name="VerifybackBtnAddLocationTypePgTest"/>
-          <include name="setup"/>
-          <include name="VerifylocationtypespageTitleTest"/>
-          <include name="VerifyaddNewLocationwithoutDataTest"/>
-          <include name="VerifyEditButtonBySearchLocationNameTest"/>
-          <include name="VerifyDeleteButtonByClickingYesTest"/>
-          <include name="VerifyaddNewLocationwithValidDataTest"/>
-          <include name="VerifyaddNewLocationwithInvalidLocationNameTest"/>
-        </methods>
-      </class> <!-- com.empire.qa.testcases.LocationTypesPageTest -->
-      <class name="com.empire.qa.testcases.SubCategoriesPageTest">
-        <methods>
-          <include name="VerifyDeleteButtonByClickingYesTest"/>
-          <include name="VerifyEditButtonBySearchSubCategoryNameTest"/>
-          <include name="VerifySearchTextFieldWithInvalidDataTest"/>
-          <include name="teardown"/>
-          <include name="VerifySearchTextFieldTest"/>
-          <include name="VerifyDeleteButtonBySearchSubCategoryNameTest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.empire.qa.testcases.SubCategoriesPageTest -->
-      <class name="com.empire.qa.testcases.HolidaysPageTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="VerifyaddNewolidayswithInvalidDataTest"/>
-          <include name="VerifyaddNewolidayswithValidDataTest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.empire.qa.testcases.HolidaysPageTest -->
-      <class name="com.empire.qa.testcases.ShiftsPageTest">
-        <methods>
-          <include name="VerifyaddNewShiftwithValidDataTest"/>
-          <include name="setup"/>
+          <include name="VerifyEhomeImageTest"/>
+          <include name="VerifyEhomeTitleTest"/>
+          <include name="VerifyLoginPageTest"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.empire.qa.testcases.ShiftsPageTest -->
+      </class> <!-- com.empire.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
