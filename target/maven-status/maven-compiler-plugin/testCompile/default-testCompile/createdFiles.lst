@@ -1,0 +1,12 @@
+com\empire\qa\testcases\HolidaysPageTest.class
+com\empire\qa\testcases\CategoryTypesPageTest.class
+com\empire\qa\testcases\LoginPageTest.class
+com\empire\qa\testcases\LocationTypesPageTest.class
+com\empire\qa\testcases\ShiftsPageTest.class
+com\empire\qa\testcases\AddInventoryTest.class
+com\empire\qa\testcases\InventoryStatusPageTest.class
+com\empire\qa\testcases\SubCategoriesPageTest.class
+com\empire\qa\testcases\UserTypesPageTest.class
+com\empire\qa\testcases\HomePageTest.class
+com\empire\qa\testcases\ConditionTypesPageTest.class
+com\empire\qa\testcases\MrpFactorsPageTest.class

@@ -1,0 +1,17 @@
+com\empire\qa\utils\UtilTest.class
+com\empire\qa\pages\ShiftsPage.class
+com\empire\qa\pages\SubCategoriesPage.class
+com\empire\qa\pages\LoginPage.class
+com\empire\qa\pages\CategoryTypesPage.class
+com\empire\qa\pages\UserTypesPage.class
+com\empire\qa\pages\AddInventoryPage.class
+com\empire\qa\pages\InventoryStatusPage.class
+com\empire\qa\pages\HomePage.class
+com\empire\qa\pages\AllInventorypage.class
+com\empire\qa\pages\HolidaysPage.class
+com\empire\qa\extentreport\ExtentReportTest.class
+com\empire\qa\pages\LocationTypesPage.class
+com\empire\qa\pages\MrpFactorsPage.class
+com\empire\qa\utils\EventListenerTest.class
+com\empire\qa\pages\ConditionTypesPage.class
+com\empire\qa\base\BaseTest.class

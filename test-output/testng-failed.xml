@@ -6,15 +6,117 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.empire.qa.testcases.LoginPageTest">
+      <class name="com.empire.qa.testcases.HolidaysPageTest">
         <methods>
+          <include name="teardown"/>
+          <include name="VerifyaddNewolidayswithInvalidDataTest"/>
+          <include name="VerifyaddNewolidayswithValidDataTest"/>
           <include name="setup"/>
-          <include name="VerifyEhomeImageTest"/>
-          <include name="VerifyEhomeTitleTest"/>
-          <include name="VerifyLoginPageTest"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.HolidaysPageTest -->
+      <class name="com.empire.qa.testcases.UserTypesPageTest">
+        <methods>
+          <include name="VerifyDeleteButtonByClickingYesTest"/>
+          <include name="VerifyaddNewUserTypePagewithoutData"/>
+          <include name="VerifyEditButtonBySearch_TypeNameTest"/>
+          <include name="VerifyUserTypePageTitleTest"/>
+          <include name="VerifyaddNewUserTypePagewithInvalidTypeCodeTest"/>
+          <include name="VerifyTypeNameSortingTest"/>
+          <include name="VerifyTypeCodeSortingTest"/>
+          <include name="VerifyaddNewUserTypePagewithInvalidTypeNameTest"/>
+          <include name="VerifyDeleteButtonBySearch_TypeNameTest"/>
+          <include name="VerifyaddNewUserTypePagewithValidDataTest"/>
+          <include name="VerifybackBtnAddUserTypePgTest"/>
+          <include name="setup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.empire.qa.testcases.LoginPageTest -->
+      </class> <!-- com.empire.qa.testcases.UserTypesPageTest -->
+      <class name="com.empire.qa.testcases.ShiftsPageTest">
+        <methods>
+          <include name="VerifyToTopArrowBtnTest"/>
+          <include name="VerifyaddNewShiftwithValidDataTest"/>
+          <include name="VerifyaddNewShiftwithInvalidShiftNameTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="VerifyaddNewShiftwithoutDataTest"/>
+          <include name="VerifyDeleteButtonBySearchShiftNameTest"/>
+          <include name="VerifyEditButtonBySearchShiftNameTest"/>
+          <include name="VerifySnoSortingTest"/>
+          <include name="VerifybackBtnAddShiftsPgTest"/>
+          <include name="VerifyDeleteButtonByClickingYesTest"/>
+          <include name="VerifyshiftspageTitleTest"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.ShiftsPageTest -->
+      <class name="com.empire.qa.testcases.AddInventoryTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="VerifyAddInventoryPageTest"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.AddInventoryTest -->
+      <class name="com.empire.qa.testcases.ConditionTypesPageTest">
+        <methods>
+          <include name="VerifyDeleteButtonByClickingYesTest"/>
+          <include name="setup"/>
+          <include name="VerifySearchTextFieldWithInvalidDataTest"/>
+          <include name="VerifySnoSortingTest"/>
+          <include name="VerifyConditionTypesPageTitleTest"/>
+          <include name="VerifyDeleteButtonBySearchConditionNameTest"/>
+          <include name="VerifySearchTextFieldTest"/>
+          <include name="VerifyConditionNameSortingTest"/>
+          <include name="VerifyEditButtonBySearchConditionNameTest"/>
+          <include name="VerifyaddNewConditionwithoutDataTest"/>
+          <include name="VerifyNextPageBtnTest"/>
+          <include name="VerifyaddNewConditionwithValidDataTest"/>
+          <include name="VerifyBackBtnTest"/>
+          <include name="VerifybackBtnAddConditionTypePgTest"/>
+          <include name="VerifyToTopArrowBtnTest"/>
+          <include name="teardown"/>
+          <include name="VerifyPage3BtnTest"/>
+          <include name="VerifyShowEntriesDropdownTest"/>
+          <include name="VerifyPreviousPageBtnTest"/>
+          <include name="VerifyaddNewConditionwithInvalidLocationNameTest"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.ConditionTypesPageTest -->
+      <class name="com.empire.qa.testcases.SubCategoriesPageTest">
+        <methods>
+          <include name="VerifyaddSubCategoryPagewithInvalidSubCategoryNameTest"/>
+          <include name="VerifyaddSubCategoryPagewithValidDataTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.SubCategoriesPageTest -->
+      <class name="com.empire.qa.testcases.MrpFactorsPageTest">
+        <methods>
+          <include name="VerifyaddNewMrpFactorwithInvalidFactorValueTest"/>
+          <include name="VerifySearchTextFieldTest"/>
+          <include name="VerifyDeleteButtonBySearchFactorNameTest"/>
+          <include name="VerifymrpfactorspageTitleTest"/>
+          <include name="VerifySnoSortingTest"/>
+          <include name="VerifyShowEntriesDropdownTest"/>
+          <include name="VerifySearchTextFieldWithInvalidDataTest"/>
+          <include name="VerifyDeleteButtonByClickingYesTest"/>
+          <include name="VerifyPage2BtnTest"/>
+          <include name="VerifyToTopArrowBtnTest"/>
+          <include name="VerifyaddNewMrpFactorwithValidDataTest"/>
+          <include name="VerifyEditButtonBySearchFactorNameTest"/>
+          <include name="VerifyPreviousPageBtnTest"/>
+          <include name="teardown"/>
+          <include name="VerifybackBtnAddMrpFactorsPgTest"/>
+          <include name="VerifyFactorValueSortingTest"/>
+          <include name="VerifyaddNewMrpFactorwithoutDataTest"/>
+          <include name="setup"/>
+          <include name="VerifyNextPageBtnTest"/>
+          <include name="VerifyFactorNameSortingTest"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.MrpFactorsPageTest -->
+      <class name="com.empire.qa.testcases.InventoryStatusPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="VerifyPage3BtnTest"/>
+        </methods>
+      </class> <!-- com.empire.qa.testcases.InventoryStatusPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
