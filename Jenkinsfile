@@ -1,33 +1,30 @@
 pipeline {
     agent any
-
+    tools {
+        maven "MAVEN"
+        jdk "JDK"
+    }
     stages {
-        stage('build') {
-            steps {
-                echo 'Hello build'
+        stage('Initialize'){
+            steps{
+                echo "PATH = ${MAVEN_HOME}/bin:${PATH}"
+                echo "MAVEN_HOME = /opt/maven"
             }
         }
-        stage('test') {
+        stage('Build') {
             steps {
-                echo 'Hello test'
+                dir("/var/lib/jenkins/workspace/demopipelinetask/my-app") {
+                sh 'mvn -B -DskipTests clean package'
+                }
             }
         }
-        stage('deploy') {
-            steps {
-                echo 'Hello deploy'
-            }
-        }
-    }
-
-// post is used to write code for post build actions we can use "always" , "failure", "success", "unstable", "changed"
-
+     }
     post {
-        always {
-
-// echo is used to print the statement
-
- echo 'Running the test !'
-          emailext body: 'Plz find the results', subject: 'Test results', to: 'sanjaykumar.marolix@gmail.com'  
-        }
-    }
+       always {
+          junit(
+        allowEmptyResults: true,
+        testResults: '*/test-reports/.xml'
+      )
+      }
+   } 
 }
